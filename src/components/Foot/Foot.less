@@ -1,0 +1,104 @@
+#Top {
+  
+  position: absolute;
+  bottom: 0;
+  width: 7.5rem;
+  background-color: #111;
+  box-shadow: 0 0 0px #333;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+  .el-menu-demo li:hover, .is-active,.el-submenu :hover  { 
+    background: #D5B77F!important;   
+    color: #FFFFFF!important;
+    border-bottom-color:#111!important; 
+     
+  }  
+   .gameTypeClass :hover{
+     
+    background-color:#111!important;   
+   }
+  .gameTypeListClass{
+    width: 5rem;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 1)!important; 
+    margin-bottom: -1px;
+    li {
+      float: left;
+      width: 50%; 
+      color: #eee;
+      text-align: center;
+      box-sizing: border-box;
+      border-right: rgba(108, 86, 63, 1) 1px solid;
+      border-bottom: rgba(108, 86, 63, 1) 1px solid;
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    } 
+  }
+  
+  
+  
+
+  .el-menu-demo {
+    border-bottom-color:#111!important;
+  }
+  
+  & > :nth-child(2){ 
+    width: 5rem;
+  }
+  .topClass {
+    color: #AA813E;
+    margin: 0.2rem 0.2rem;
+    height: 1rem;
+    & > :nth-child(1){ 
+      float: left;
+    }
+    & > :nth-child(2){  
+      width: 4rem;
+      float: right; 
+      text-align: right;
+
+      & > div:nth-child(1){   
+         & > span {
+           margin: 0.3rem 0.1rem; 
+         }
+      }
+      & > div:nth-child(2){    
+        margin: 0.3rem 0.01rem;
+        & > div:nth-child(1){   
+          float: left; 
+          height: 0.3rem;   
+          line-height: 0.3rem;
+          background-color:  #FFE67E;
+          color: #333;
+          border-radius: 0.3rem;
+          padding: 0rem 0.4rem;
+          margin-bottom: 0.1rem;
+          .red{
+            color: red;
+          }
+          & > span { 
+            img{
+              width: 0.15rem;
+              height: 0.1rem; 
+            }
+          }  
+        }
+        & > div:nth-child(2){  
+          float: right; 
+          & > span {  
+           margin: 0.3rem 0.01rem;  
+          } 
+          
+        }
+        
+      }
+
+    }
+  
+  }
+  
+
+}
